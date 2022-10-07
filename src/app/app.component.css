@@ -1,0 +1,10 @@
+.container2{
+    max-width: 416px;
+    height: 671px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}

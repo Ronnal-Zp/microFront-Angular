@@ -1,0 +1,69 @@
+
+<div class="loginContainer">
+
+    <div class="loginMain">
+        <div class="loginMain__logo">
+            <img src="https://angular-material.fusetheme.com/assets/images/logo/logo.svg" alt="">
+        </div>
+
+        <div class="loginMain__title">
+            <h2>Sign In</h2>
+            <p>Don't have an account? <a href="">Sign up</a></p>
+        </div>
+
+        <div class="loginMain__form">
+
+            <form class="example-form">
+
+                <div>
+                    <label class="form-label">Email address</label>
+                    <input class="form-control" type="email" id="inputPassword5"  [formControl]="emailFormControl" >
+                    <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                        Please enter a valid email address
+                    </mat-error>
+                    <mat-error *ngIf="emailFormControl.hasError('required') && emailFormControl.touched ">
+                        <small>Email address is <strong>required</strong></small>
+                    </mat-error>
+                </div>
+                
+
+                <div>
+                    <label class="form-label">Password</label>
+                    <div class="form-control">
+                        <input type="password" id="inputPassword5" [formControl]="emailFormControl"  >
+                        <i class="bi bi-eye-fill"></i>
+                    </div>
+                    <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                        Please enter a valid password
+                    </mat-error>
+                    <mat-error *ngIf="emailFormControl.hasError('required') && emailFormControl.touched ">
+                       <small>Password is <strong>required</strong></small>
+                    </mat-error>
+                </div>
+                
+               
+              </form>
+
+            <div class="remember">
+                <label for="">
+                    <input class="form-check-input" type="checkbox" name="" id="">
+                    Remember me
+                </label>
+                <a routerLink="/forget-password">Forgot password?
+                </a>
+            </div>
+        </div>
+
+        <a href="" class="loginMain__signIn">Sign In</a>
+
+        <div class="loginMain__socialMedia">
+            LOGO1
+            LOGO2
+            LOGO3
+        </div>
+        
+    </div>
+
+    <app-presentation></app-presentation>
+
+</div>

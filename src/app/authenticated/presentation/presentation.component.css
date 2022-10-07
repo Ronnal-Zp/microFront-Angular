@@ -1,0 +1,16 @@
+.loginDetail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 26px;
+
+    max-width: 620px;
+    height: 100%;
+
+    background-color: var(--bs-purple);
+    padding: 64px;
+}
+
+.loginDetail h2{
+    line-height: 40px;
+}
